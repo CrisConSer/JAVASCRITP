@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var nombre = "Cris";
+    var edad = 35;
+    // Condicional if - se cumple
+    document.write("<p style='font-size: 22px;'><strong>1.- Condicional con IF </strong></p>");
+    document.write("<p style='font-size: 15px;'><strong>1.1.- Si mi edad es 35 se cumple </strong></p>");
+
+    if (edad == 35){
+      document.write("Se cumple mi condición");
+    }
+    else{
+      document.write("No se cumple mi condición");
+    }
+
+//***************************************************************    
+    var nombre = "Cris";
+    var edad = 30;
+    // Condicional if - no se cumple
+    document.write("<p style='font-size: 15px;'><strong>1.2.- Si mi edad es diferente a 35 no se cumple </strong></p>");
+
+    if (edad == 35){
+      document.write("Se cumple mi condición");
+    }
+    else{
+      document.write("No se cumple mi condición");
+    }
+
+//**************************************************************
+    // Concatenar IF con ELSE IF
+    var nombre = "Cris";
+    var edad = 30;
+    // Condicional if - si cumple
+    document.write("<p style='font-size: 22px;'><strong>2.-Concatenar IF con ELSE IF </strong></p>");
+
+    document.write("<p style='font-size: 15px;'><strong>2.1.- Si mi nombre es Cris se cumple la condición  </strong></p>");
+
+    if (edad == 35){
+      document.write("Se cumple mi condición");
+    }
+    //Segunda pregunta
+    else if (nombre == "Cris"){
+      document.write("Si, mi nombre es: " + nombre);
+    }
+    //No se cumple ningua de las anteriores
+    else{
+      document.write("No se cumple mi condición");
+    }
+
+//***************************************************************
+
+    var nombre = "Estefi";
+    var edad = 30;
+    // Condicional if - no cumple
+
+    document.write("<p style='font-size: 15px;'><strong>2.1.- Si mi nombre no es Cris no se cumple la condición  </strong></p>");
+
+
+    if (edad == 35){
+      document.write("Se cumple mi condición");
+    }
+    //Segunda pregunta
+    else if (nombre == "Cris"){
+      document.write("Si, mi nombre es: " + nombre);
+    }
+    //No se cumple ningua de las anteriores
+    else{
+      document.write("No se cumple mi condición porque tu nombre es: " + nombre);
+    }
+
+//****************************************************************    
+    var nombre = "Canija";
+    var edad = 37;
+    var musica = "Love of Lesbian"
+    // Condicional if - si cumple
+
+      document.write("<p style='font-size: 15px;'><strong>2.3.- Operadores lógicos && (AND) y || (OR) </strong></p>");
+
+      // Operador && (AND)
+      if (nombre == "Estefi" && edad == 37){
+        document.write("Puedes acceder porque tu nombre es " + nombre + " y tu edad es " + edad);
+      }
+      else {
+        document.write("No puedes acceder porque tu nombre es " + nombre + " y tu edad es de " + edad + " y de deben cumplir las dos condiciones, que te llames Estefi y tengas 37 años");
+      }
+
+      //Operado || (OR)
+      document.write("<br>");
+
+      if (nombre == "Estefi" || edad == 37){
+        document.write("Puedes acceder porque tu nombre o es Estefi o tienes 37 años y en tu caso tu nombre es " + nombre + " y tu edad es " + edad + " y se cumple una de las dos condiciones");
+      }
+      else {
+        document.write("No puedes acceder porque tu nombre no es Estefi ni tienes 37 años");
+      }
+
+
+
+   
+
+
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

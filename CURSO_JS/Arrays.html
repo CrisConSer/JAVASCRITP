@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARRAYS JS</title>
+</head>
+<body>
+  
+  <script>
+      // Declaro el array
+
+        var colores = ["verde","rosa","azul", "naranja","amarillo"];
+        //document.write(colores);
+
+      // MÉTODOS MÁS UTILIZADOS
+
+        // Acceder y cambiar un elemento del array
+          colores[1] = "rojo";
+          document.write("<p style='font-size: 22px;'><strong>1.- Imprimir nuestro array</strong></p>");
+
+          document.write(colores + "<br>");
+
+        //En este caso no tenemos un array con 5 pero lo que hace es crearlo
+          document.write("<p style='font-size: 22px;'><strong>2.- Añadir elementos a nuestro array</strong></p>");
+          colores[5] = "negro";
+          colores[6] = "purpura";
+          document.write(colores); 
+
+        // Longitud del array
+          document.write("<p style='font-size: 22px;'><strong> 3.- Saber la longitud de nuestro array</strong></p>");
+          var longitudArray = colores.length;
+          document.write(longitudArray);
+
+          // Crear un nuevo elemento dentro del array - metodo 1
+          document.write("<p style='font-size: 18px;'><strong>3.1.- Puedo crear un elemento nuevo con length - método 1</strong></p>");
+          colores[longitudArray] = "blanco";
+          document.write(colores);
+
+          // Crear un nuevo elemento dentro del array - metodo 2
+          document.write("<p style='font-size: 18px;'><strong>3.2.- Puedo crear un elemento nuevo con length - método 2</strong></p>");
+          colores.push("rosa","gris");
+          document.write(colores);
+
+        //Eliminar un elemento del array
+          document.write("<p style='font-size: 22px;'><strong>4.- Eliminar elementos a nuestro array</strong></p>");
+          colores.pop();
+          document.write(colores);
+
+        //Concatenar arrays
+          document.write("<p style='font-size: 22px;'><strong>5.- Concatenar arrays</strong></p>");
+
+        // Creamos dos arrays para poder concatenar - método .concat()
+          var colores2 = ["naranja", "negro", "celeste"];
+          var colores3 = ["verde", "azul", "blanco", "rosa"];
+
+          var coloresTotales = colores2.concat(colores3);
+          document.write(coloresTotales);
+
+        //Cambiar estilo del array
+        document.write("<p style='font-size: 22px;'><strong>6.- Cambiar estilo de los arrays</strong></p>");
+        
+        // Vamos a cambiar los separadores - método join()
+        var arrayMejorado = colores.join(" ///// ");
+        document.write(arrayMejorado);
+
+        //Ordenar alfabéticamente - método .sort()
+        document.write("<p style='font-size: 22px;'><strong>7.- Ordenar de forma alfabética</strong></p>");
+
+        var arrayOrdenado = colores.sort();
+        document.write(arrayOrdenado);
+
+
+  </script>
+</body>
+</html>
