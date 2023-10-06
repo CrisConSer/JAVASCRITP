@@ -72,10 +72,13 @@ inforPTA.innerHTML +=`
 ;
 
 // FUNCIONES
+  // esta función es super abstracta, al estar tan parametrizada, sirve para cualquier contenedor y cualquier mensaje
 function imprimirHTML (contenedor){
  contenedor.innerHTML += mensaje;
 }
 
+
+  // Esta función es muy concreta, al no tener parámetros, solo sirve para ese contenedor y ese mensaje
 function imprimirHTML (contenedor){
   inforPTA.innerHTML +=`
   <h3>Entre los alumnos de campanillas, una de ellas es: ${docente}</h3>
