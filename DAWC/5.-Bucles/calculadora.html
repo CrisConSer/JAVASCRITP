@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <!-- Aquí creamos un formulario simple -->
     <h2>Calculadora</h2>
     <form id="calculator-form">
         <label for="number">Introduce un número:</label><br>
@@ -13,19 +14,35 @@
         <button type="button" onclick="calculate()">Calcular</button>
     </form>
 
+    <!-- Aquí creamos una lista donde mostraremos los resultados -->
     <h2>Resultados:</h2>
     <ul id="result-list"></ul>
 
+    <!-- Aquí comienza el código JavaScript -->
     <script>
+        // Esta función se llama cuando hacemos clic en el botón "Calcular"
         function calculate() {
+            // Obtenemos el valor ingresado en el campo de entrada
             var input = document.getElementById("number").value;
-            var resultList = document.getElementById("result-list");
-            resultList.innerHTML = ''; // Limpiar la lista antes de mostrar nuevos resultados
 
+            // Obtenemos la lista donde mostraremos los resultados
+            var resultList = document.getElementById("result-list");
+
+            // Limpiamos la lista antes de mostrar nuevos resultados
+            resultList.innerHTML = '';
+
+            // Aquí creamos un bucle que recorre los números del 1 al 10
             for (var i = 1; i <= 10; i++) {
+                // Calculamos el resultado multiplicando el número de entrada por el número actual en el bucle
                 var result = input * i;
+
+                // Creamos un elemento de lista en HTML
                 var listItem = document.createElement("li");
+
+                // Añadimos un texto al elemento de lista que muestra el cálculo y el resultado
                 listItem.appendChild(document.createTextNode("El resultado de " + input + " multiplicado por " + i + " es: " + result));
+
+                // Añadimos el elemento de lista a la lista de resultados
                 resultList.appendChild(listItem);
             }
         }
@@ -33,3 +50,4 @@
 </body>
 
 </html>
+
