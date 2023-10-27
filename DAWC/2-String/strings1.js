@@ -35,7 +35,54 @@ let precio = "40 €";
 console.log(correo);
 
 console.log("el producto " + producto2 + " cuesta: " + precio);
-console.log("el producto " , producto2 , 2 " cuesta: " , precio );
+console.log("el producto " , producto2 ,  " cuesta: " , precio);
+
+// templaete string
+
+console.log(`el producto ${producto2} cuesta: ${precio}`);
+
+//Eliminar espacios en blanco
+
+let correo = " lala@gmail.com ";
+console.log(correo);
+
+console.log(correo.trimStart());
+console.log(correo.trimEnd());
+
+console.log(correo.trimStart().trimEnd());
+
+console.log(correo.trim());
+
+// Reemplazar 
+
+let frase = "Erase una vez";
+
+// Replace para reemplazar
+console.log(frase.replace("Erase","Solo"));
+
+//Recortar Slide o substring
+console.log(frase.substring(2));
+console.log(frase.substring(6,9));
+
+//Recortar un solo caracter
+console.log(frase.charAt(6));
+console.log(frase.substring(6,7));
+
+//repeat
+let coche = "daw, dam, asir";
+console.log(ciclos.split(","));
+
+//conversión a mayus / minus
+let correo2 = "CORREO@GMAIL.COM";
+console.log(correo.toLocaleLowerCase());
+
+let nombre = "Estefi";
+console.log(nombre.toUpperCase());
+
+//conversión a string
+let precio2 = 300;
+console.log(precio.toString());
+
 
 
 
