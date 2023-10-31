@@ -42,3 +42,9 @@ div{
   background-color: #e1e1e1;
 }
 
+p{
+  width: 25%;
+  margin-bottom: 30px;
+  display: inline-block;
+  margin: 15px;
+}
