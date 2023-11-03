@@ -1,0 +1,38 @@
+h2{
+  text-align: center;
+  font-size: 50px;
+  
+}
+#coches {
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #7f0456;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+  color: rgb(222, 197, 197);
+  font-size: 50px;
+  
+}
+
+#coches input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+#coches input[type="submit"]{
+  width:10%;
+  height: 20%;
+}
+
+#precio{
+  width: 100%;
+  height: 50px;
+}

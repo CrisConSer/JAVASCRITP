@@ -1,6 +1,7 @@
 //Obtenemos el DOM del HTML
 
 var suma = document.getElementById("suma");
+var resta = document.getElementById("resta");
 var multiplicacion = document.getElementById("multiplicacion");
 var division = document.getElementById("division");
 var raiz = document.getElementById("raiz");
