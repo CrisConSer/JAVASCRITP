@@ -57,7 +57,7 @@ absoluto.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
-  var boton1 = parseInt(document.getElementById("boton1").value);
+  //var boton1 = parseInt(document.getElementById("boton1").value);
   resetear(reset);
 });
 
