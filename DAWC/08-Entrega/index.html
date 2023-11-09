@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APLICACIÓN PUESTO DE TRABAJO</title>
+  <script src ="trabajos.js" defer></script>
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(13, 91, 15);
+      text-align: center;
+    }
+
+    #contenedor {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    #imagen {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    #dollar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="contenedor" class="contenedor">
+    <h2>¿Quieres saber lo que ganaría según el puesto de trabajo?</h2>
+    <br>
+    <h3>Elige un puesto de trabajo</h3>
+    <br>
+    <form action="" method="post">
+      <input type="text" name="nombre" id="nombre">
+      <br><br>
+      <input type="submit" name="enviar" id="enviar">
+    </form>
+    <div id="imagen" class="imagen">
+      <img src="images.png" alt="imagen">
+    </div>
+    <div id="dollar" class="dollar">    
+      <img src="dollar.png" alt="dollar" style="width: 30%;">
+      <h3>El precio es:</h3>
+      <input type="number" name="precio" id="precio">
+    </div>
+  </div> 
+</body>
+</html>
